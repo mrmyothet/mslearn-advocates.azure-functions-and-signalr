@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # To use the Microsoft Learn Sandbox in the training module
 # https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr
 # To run: sign in to Azure CLI with `az login`

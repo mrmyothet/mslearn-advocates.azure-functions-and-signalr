@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # To use the Microsoft Learn Sandbox in the training module
 # https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr
 # To run: sign in to Azure CLI with `az login`
@@ -89,7 +87,8 @@ az cosmosdb sql container create \
     --account-name $COMSOSDB_NAME \
     --database-name stocksdb \
     --name stocks \
-    --partition-key-path /symbol
+    # --partition-key-path \"\/symbol\"
+    --partition-key-path "/symbol"
 
 printf "Get storage connection string\n"
 
